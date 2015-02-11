@@ -57,7 +57,7 @@
 <p>The first image in the description will be used as the default cat image and text will be used as the description, you can use html in the description but it will all be stripped</p>
 <p>For the images just leave the old url in I.E <code>%%GLOBAL_ShopPath%%/path/to/image/image.jpg</code> this plugin will go and find them and upload them to the wordpress media library and assing it to the category :D </p>
 <?php 
-	$vartest = GQ::get_instance();
+	$vartest = Import_categories::get_instance();
 ?>
 	<?php
 		if(isset( $_GET["settings-updated"] ) ){
