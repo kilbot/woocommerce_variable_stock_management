@@ -7,12 +7,14 @@ Tested up to: 3.6
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-import categories for gq
+URI: http://www.gnu.org/licenses/gpl-2.0.html
+WC requires at least: 2.2.11
+WC tested up to: 2.3
+Custom variable product stock  reduction
 
 == Description ==
 
-import categories for gq (Longer description here)
+This is set out to solve the problem of dealing with woocommerce's variable products only ever deducting one from the total product stock. the use Case I had for it was: Client want's to seel packs of cigars 3/5/10 and wants erach variation to deduct from the main product total. Simple plugin to manage variable product stock, Update product quantities dynamically, using woocommerce. Basically this question http://wordpress.stackexchange.com/questions/72662/woocommerce-fixed-quantity-of-a-product. If a product variation needs to update the total stock quantity say you sell packs of nails or packets of cigars and you want…
 
 == Installation ==
 
