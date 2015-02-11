@@ -11,6 +11,10 @@
  * @link      http://buildawebdoctor.com
  * @copyright 2-7-2015 BAWD
  */
+// If this file is called directly, abort.
+if ( ! defined( 'ABSPATH' ) ) { 
+    exit; // Exit if accessed directly
+}
 ?>
 <div class="wrap">
 

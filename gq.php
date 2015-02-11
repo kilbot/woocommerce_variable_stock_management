@@ -1,4 +1,5 @@
 <?php
+
 /**
  * GQ
  *
@@ -22,7 +23,10 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path: /lang
  */
-
+// If this file is called directly, abort.
+if ( ! defined( 'ABSPATH' ) ) { 
+    exit; // Exit if accessed directly
+}
 // If this file is called directly, abort.
 if (!defined("WPINC")) {
 	die;
