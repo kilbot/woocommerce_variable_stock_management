@@ -161,15 +161,6 @@ class Import_categories{
 				$parent_slug 	= $value['parent_slug'];
 				$display_type 	= $value['display_type'];
 				$term_id  		= $value['id'];
-				/*$new_tax  		= wp_insert_term(
-							$name, 
-							'product_cat', 
-			  				array(
-			    					'description'	=> $description,
-			    					'slug' 			=> $slug,
-			    					'parent'		=> $parent_slug,
-			  				)
-				);*/
 				if($parent_slug == "0"){
 
 					$catarr = array(
@@ -230,12 +221,6 @@ class Import_categories{
 																				)
 								);
 								echo "<h4>Imported: ". $value['name'] . "</h4>";
-				    // ... etc ...
-								/*
-									echo "<pre>";
-										var_dump($thumbnail);
-									echo "</pre>";
-								*/
 				}else{
 				     // Trouble in Paradise:
 				     echo $new_tax->get_error_message();

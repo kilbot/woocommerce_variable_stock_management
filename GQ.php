@@ -172,7 +172,6 @@ class GQ{
 
 		$screen = get_current_screen();
 		if ($screen->id == $this->plugin_screen_hook_suffix) {
-			//wp_enqueue_script($this->plugin_slug . "-admin-script", plugins_url("js/gq-admin.js", __FILE__),array("jquery"), $this->version);
 		}
 
 	}
@@ -183,7 +182,6 @@ class GQ{
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-		//wp_enqueue_style($this->plugin_slug . "-plugin-styles", plugins_url("css/public.css", __FILE__), array(),$this->version);
 	}
 
 	/**
@@ -192,7 +190,6 @@ class GQ{
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-		//wp_enqueue_script($this->plugin_slug . "-plugin-script", plugins_url("js/public.js", __FILE__), array("jquery"),$this->version);
 	}
 
 	/**
