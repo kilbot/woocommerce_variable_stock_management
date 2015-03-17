@@ -14,7 +14,7 @@
  * @wordpress-plugin
  * Plugin Name: GQ
  * Plugin URI:  http://buildawebdoctor.com
- * Description: import categories for gq
+ * Description: Add variable stock management
  * Version:     1.0.3
  * Author:      vimes1984
  * Author URI:  http://buildawebdoctor.com
