@@ -15,7 +15,7 @@
  * Plugin Name: Woo Variable stock managemnet
  * Plugin URI:  http://buildawebdoctor.com
  * Description: variable stock management
- * Version:     1.1.2
+ * Version:     1.1.3
  * Author:      vimes1984
  * Author URI:  http://buildawebdoctor.com
  * Text Domain: gq-locale
