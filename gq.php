@@ -12,10 +12,10 @@
  * @copyright 2-7-2015 BAWD
  *
  * @wordpress-plugin
- * Plugin Name: GQ
+ * Plugin Name: Woo Variable stock managemnet
  * Plugin URI:  http://buildawebdoctor.com
- * Description: import categories for gq
- * Version:     1.1.2
+ * Description: variable stock management
+ * Version:     1.1.4
  * Author:      vimes1984
  * Author URI:  http://buildawebdoctor.com
  * Text Domain: gq-locale

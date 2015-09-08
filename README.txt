@@ -3,8 +3,8 @@ Contributors: vimes1984
 Donate link: http://buildawebdoctor.com
 Tags: Woocommerce, Variable Stock
 Requires at least: 3.5.1
-Tested up to: 4.2
-Stable tag: 1.1.2
+Tested up to: 4.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

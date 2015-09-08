@@ -255,7 +255,7 @@ class Variable_product_stock_reduction{
 				$updatestock 	= $product->set_stock( $newstock );;
 
 			}else{
-				$product->reduce_stock( $qty );
+				//$product->reduce_stock( $qty );
 			}
 
 
@@ -271,10 +271,10 @@ class Variable_product_stock_reduction{
 
 		// order object (optional but handy)
 
-		$order 			= new WC_Order( $order_id );
-		$items 			= $order->get_items();
+		$order 					= new WC_Order( $order_id );
+		$items 					= $order->get_items();
 		$varation_ids 	= array();
-		$i 				= 0;
+		$i 							= 0;
 
 		foreach ($items as $key => $value) {
 			# code...
@@ -285,11 +285,11 @@ class Variable_product_stock_reduction{
 		}
 		foreach($variation_ids as $key => $value){
 
-			$deductornot 	= get_post_meta( $value["variation_id"], '_deductornot', true );;
+			$deductornot 		= get_post_meta( $value["variation_id"], '_deductornot', true );;
 			$deductamount 	= get_post_meta( $value["variation_id"], '_deductamount', true );;
-			$product_id		= $value['product_id'];
-			$qty			= $value['qty'];
-			$product 		= wc_get_product( $product_id );
+			$product_id			= $value['product_id'];
+			$qty						= $value['qty'];
+			$product 				= wc_get_product( $product_id );
 
 			if($deductornot == "yes"){
 				$currentstock 	= $product->get_stock_quantity();
@@ -298,10 +298,16 @@ class Variable_product_stock_reduction{
 				$updatestock 	= $product->set_stock( $newstock );;
 
 			}else{
-				$product->reduce_stock( $qty );
+
+
+				//$product->reduce_stock( $qty );
 			}
 			// Clear caches
 		}
+/*
+				return false;
+				die();
+*/
 		// delete all "namespace" transients
 		$sql = "DELETE FROM {$wpdb->options} WHERE option_name like '\_transient\_timeout\_wc\_%' ";
 
