@@ -69,8 +69,8 @@ class Variable_product_stock_reduction{
 		//Save variation fields
 		add_action( 'woocommerce_process_product_meta_variable', array($this, 'save_variable_fields'), 10, 1 );
 		//
-		add_action( "woocommerce_checkout_order_processed", array($this, 'update_stock_on_checkout_nopayment') );
-		//add_action( "woocommerce_payment_complete", array($this, 'update_stock_on_checkout') );
+		//add_action( "woocommerce_checkout_order_processed", array($this, 'update_stock_on_checkout_nopayment') );
+		add_action( "woocommerce_payment_complete", array($this, 'update_stock_on_checkout_nopayment') );
 		//Stop woocommerce from reducing stock amounts
 		//add_filter( 'woocommerce_payment_complete_reduce_order_stock', '__return_false' );
 	}
